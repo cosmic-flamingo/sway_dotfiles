@@ -1,0 +1,72 @@
+// -*- mode: jsonc -*-
+
+// Minimal Waybar Config
+
+
+{
+	"layer": "top",
+	"position": "top",
+	// "height": 30, // leave blank for ...
+	// "width" 1280, // ... dynamic scaling
+
+// modules
+
+	"modules-left": [
+	  "sway/workspaces"
+	  ], 
+	
+	"modules-center": [
+	  "clock"
+	  ],
+
+	  "modules-right": [
+	    "custom/pavucontrol", 
+	    "network",
+	    "custom/wlogout"
+	  ],
+
+	// workspaces
+      "sway/workspaces": {
+	"format": "{name}",
+	"persistent_workspaces": {
+	"1": {},
+    	"2": {},
+    	"3": {},
+    	"4": {}
+         }
+
+    },
+
+	// ethernet connection
+	"network": {
+	"interface": "enp1s0",
+	"format-ethernet": "󰈁",
+	"format-disconnected": "󰈂"
+        },
+
+	// logout menu
+	"custom/wlogout": {
+        "format": "⏻",
+	"tooltip": "Log out menu",
+	"on-click": "wlogout",
+	"interval": 0
+    },
+
+	// audio control
+        "custom/pavucontrol": {
+    "format": "",
+    "tooltip": "Open PulseAudio Control",
+    "on-click": "pavucontrol",
+    "interval": 0
+}
+    },
+	// clock
+	"clock": {
+	  "format": "{:%H:%M}",
+          "timezone": "Europe/London"
+    }
+
+}
+
+
+
