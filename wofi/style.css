@@ -1,0 +1,47 @@
+window {
+    background-color: #282C34;
+    color: #ffffff;
+    font-family: "Mononoki Nerd Font Mono", monospace;
+    font-size: 14px;
+    border: 1px solid #21252B
+    border-radius: 1px;
+}
+
+#entry {
+    padding: 8px;
+}
+
+#input {
+margin: 5px;
+border: none;
+color: #d8dee9;
+background-color: #3b4252;
+}
+
+#inner-box {
+margin: 5px;
+border: none;
+background-color: #2e3440;
+}
+
+#outer-box {
+margin: 5px;
+border: none;
+background-color: #2e3440;
+}
+
+#scroll {
+margin: 0px;
+border: none;
+}
+
+#text {
+margin: 5px;
+border: none;
+color: #d8dee9;
+}
+
+#entry:selected {
+    background-color: #61AFEF;
+    color: #ffffff;
+}
