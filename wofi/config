@@ -1,0 +1,24 @@
+# Run mode: 'drun', 'run', or 'window'
+mode=drun
+
+# Show prompt text
+prompt=Run:
+
+# Case-insensitive search
+case-insensitive=true
+
+# Show lines (number of entries shown)
+show=10
+
+# Width and height of the wofi window (in % or pixels)
+width=30%
+height=400px
+
+# Position on screen (center, top-left, top-right, etc.)
+location=center
+
+# Set DPI (optional)
+dpi=96
+
+# Hide scroll bar
+no-scrollbar=true
